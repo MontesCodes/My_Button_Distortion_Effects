@@ -8,6 +8,13 @@
   display: flex;
   justify-content: space-around;
 }
+#text {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 button {
   font-family: impact;
   position: relative;
@@ -33,7 +40,7 @@ button:hover {
   animation: squish 0.5s;
 }
 button:hover::before {
-  background: linear-gradient(to right, red, green, blue);
+  background: linear-gradient(to right, grey, green, purple, white);
   filter: url('#wave');
 }
 @keyframes squish {
