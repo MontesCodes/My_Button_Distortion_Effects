@@ -19,7 +19,7 @@ button {
   outline: none;
   font-size: 40px;
 }
-button::before {
+button:before {
   content: '';
   background: black;
   width: 100%;
